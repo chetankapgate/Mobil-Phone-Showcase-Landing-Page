@@ -1,0 +1,141 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&family=Oswald&family=Josefin+Sans&family=Poppins&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #e8f1fd;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* all similar content styling codes */
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+section{
+    min-height: 100vh;
+    padding:0 80px;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+
+/* navbar section styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: #000;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+}
+
+.navbar .logo a span{
+    color: #00B0FF;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    display: block;
+    color: #00B0FF;
+    font-size: 18px;
+    font-weight: 200;
+    margin-left: 25px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .menu li a:hover{
+    color: #65ceff;
+}
+
+/* menu btn styling */
+.menu-btn{
+    color: #000;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/* home section styling */
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .home-img img{
+    width:40vw;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-3.5rem);
+    }
+}
+
+.home .content h1{
+    font-size: 4rem;
+    color:#333;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.home .content h1 span{
+    color: #00B0FF;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.home .content p{
+    font-size: 1.3rem;
+    color:#666;
+    font-family: 'Slabo 27px', sans-serif;
+    padding:.5rem 0;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: .5rem;
+    padding:.5rem 2rem;
+    border-radius: 5rem;
+    background: #00B0FF;
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    transition: all .3s linear;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
